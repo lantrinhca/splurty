@@ -3,4 +3,5 @@ class Quote < ActiveRecord::Base
 	# validates :author, :presence => true, :length => { :maximum => 50, :minimum => 3 }
 	validates :saying, length: { in: 3..140}
 	validates :author, length: { in: 3..50}
+
 end
