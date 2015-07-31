@@ -1,7 +1,6 @@
 class QuotesController < ApplicationController
 	def index
 		@quote = Quote.order("RANDOM()").first
-
 	end
 
 	def create
@@ -18,8 +17,13 @@ class QuotesController < ApplicationController
 	def show
 		@quote = Quote.where(:id => params[:id]).first
 		if @quote.blank?
+<<<<<<< HEAD
       render :text => "Not Found", :status => :not_found
     end
+=======
+			render :text => "Not Found", :status => :not_found	
+		end	
+>>>>>>> 1c05aa44f59fd2e0214b5fc7493c7b8f6ee07cf1
 	end
 
 	private
