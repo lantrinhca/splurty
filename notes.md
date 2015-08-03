@@ -4,4 +4,5 @@
 - get(action, *args)
   action: The controller action to call.
   parameters: The HTTP parameters that you want to pass.
-  {{http://lantrinh.ca}}
+
+# Disabled fixture in test_helper.rb if error occured.
